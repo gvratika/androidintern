@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b" >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="NEW COMPLAINT"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Issue"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/newComplaintIssue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="Complaint Issue"
+            	android:inputType="textVisiblePassword" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <EditText
+                android:id="@+id/newComplaintTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dip"
+                android:ems="10"
+                android:hint="Complaint Title.." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/newComplaintTitle"
+                android:layout_alignBottom="@+id/newComplaintTitle"
+                android:layout_alignParentLeft="true"
+                android:text="Title"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/button1"
+                android:layout_alignBottom="@+id/button1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dip"
+                android:text="Photo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dip"
+                android:layout_marginRight="29dp" >
+
+                <RadioButton
+                    android:id="@+id/noImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="  No Image" />
+
+                <RadioButton
+                    android:id="@+id/uploadImage"
+                    android:onClick="browseImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:text="  Upload  " />
+
+                <RadioButton
+                    android:id="@+id/captureImage"
+                    android:onClick="captureImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Capture Now" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Button02"
+                android:layout_alignBottom="@+id/Button02"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dip"
+                android:text="Video"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dip"
+                android:layout_marginRight="20dp" >
+
+                <RadioButton
+                    android:id="@+id/noVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="  No Video   " />
+
+                <RadioButton
+                    android:id="@+id/uploadVideo"
+                    android:onClick="browseVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Upload" />
+
+                <RadioButton
+                    android:id="@+id/recordVideo"
+                    android:onClick="recordVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Record Now    " />
+            </RadioGroup>
+
+        </RelativeLayout>
+        <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginTop="20dip"
+        	android:text="Discription"
+        	android:textAppearance="?android:attr/textAppearanceMedium"
+        	android:textStyle="bold" />
+        <EditText 
+	        android:id="@+id/newComplaintDescription"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="5dip"
+		    android:layout_marginBottom="15dip"
+		    android:lines="4"
+		    android:hint="Complaint Description.."
+		    android:gravity="top"/>
+        
+        <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginTop="20dip"
+        	android:text="Location"
+        	android:textAppearance="?android:attr/textAppearanceMedium"
+        	android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/currentLocation"
+            android:onClick="getCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="Get Current Location" />
+
+        <EditText 
+	        android:id="@+id/newComplaintAddress"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="5dip"
+		    android:layout_marginBottom="15dip"
+		    android:lines="4"
+		    android:hint="Location of complaint area..."
+		    android:gravity="top"/>
+
+        <CheckBox
+            android:id="@+id/shareOnFb"
+            android:layout_margin="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share On Facebook" />
+
+        <CheckBox
+            android:id="@+id/shareOnTwitter"
+            android:layout_margin="5dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share On Twitter" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onSubmit"
+            android:layout_marginTop="10dip"
+            android:text="Submit" />
+    </LinearLayout>
+
+</ScrollView>

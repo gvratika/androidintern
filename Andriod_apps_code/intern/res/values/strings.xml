@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AndroidDashboard!</string>
+    <string name="app_name">AndroidLoginAndRegistrationWithMySQLPHPSQLite</string>
+    <string name="intro">Capture a picture to crop!</string>
+	<string name="picture">Picture</string>
+	<string name="capture">Launch Camera</string>
+    <!-- Facebook events -->
+    <string name="toast_facebook_auth_success">Facebook authentication is successful</string>
+    <string name="toast_facebook_auth_fail">Error was occurred during Facebook authentication</string>
+    <string name="facebook_post_published">Posted to Facebook successfully</string>
+    <string name="facebook_post_publishing_failed">Post publishing was failed</string>
+    <string name="facebook_logged_out">You are logged out</string>
+    <!-- Text and labels -->
+    <string name="share_message_title">Message</string>
+    <string name="button_facebook_post">Post on Facebook</string>
+    <string name="button_facebook_post_image">Post image on Facebook</string>
+    <string name="button_twitter_post">Post on Twitter</string>
+    <string name="button_share_facebook">Share on Facebook</string>
+    <string name="button_share_twitter">Share on Twitter</string>
+    <string name="menu_logout">Logout</string>
+
+</resources>

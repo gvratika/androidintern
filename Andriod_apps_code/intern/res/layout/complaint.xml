@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/inputName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Product Name"
+        android:textSize="17dip" />
+    
+    <!-- Date -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created at"
+        android:textColor="#21dbd4"
+        android:layout_marginTop="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<!-- issue Label -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue"
+        android:textColor="#21dbd4"
+        android:layout_marginTop="20dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/inputissue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="issue"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:textSize="17dip"/>
+	
+	<!-- Description Label -->
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="#21dbd4"
+        android:layout_marginTop="20dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+    <TextView android:id="@+id/inputDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:paddingLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:paddingRight="10dip"
+        android:textSize="17dip"/>
+	
+	<ImageView
+		android:id="@+id/imview"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginTop="20dip"
+    	android:layout_gravity="center"
+    	android:clickable="true" />
+
+	<VideoView
+	    android:id="@+id/viview"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dip"
+    	android:layout_gravity="center" />
+	
+</LinearLayout>
+</ScrollView>
